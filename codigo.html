@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta name="viewport" content="width=400, initial-scale=1.0,,user-scalable=no"> 
+        <script type="text/javascript" charset="utf-8" src="scripts/controller.js"></script>
+	<script type="text/javascript" charset="utf-8" src="scripts/utils.js"></script>
+        <link href="css/menu.css" type="text/css" rel="stylesheet" />
+        <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    </head>
+    
+    <body onload="init()">
+	<br><br>
+	<div id="codigo">
+	<img src="images/moblin-home.png" onclick="location.href='index.html'" /><br>Volver al men&uacute principal
+        <h1>C&oacutedigo</h1>
+        <canvas onclick="cargado();" id="canvas" width="700" height="400" >
+            El navegador no soporta canvas.
+	</canvas>
+	<div id="botones">
+        <br>
+        <p><button onclick="Anterior();">Anterior</button> <button onclick="Siguiente();">Siguiente</button></p>
+	</div>
+	<br><br><br><br>
+	<div id="replica" class="arreglo">
+	<div id="explicacion">
+	   <p> <label> Explicaci&oacuten </p> <br>
+	    <textarea id="texplicacion" name="texplicacion" class="textoareas" contenteditable=false></textarea>
+	</div>
+	
+	<br>
+	<div id="Ejecucion">
+	   <p> <label>Ejecuci&oacuten </p> <br>
+	    <textarea id="tejecucion" name="tejecucion" class="textoareas" contenteditable=false></textarea>
+	    <div id="input">
+		<input type="text" id="tinput" name="tinput" value="" />
+		<br>
+		<button id="boton1" onclick="validaCampo();" type="button">Ok</button> 
+		<br><br>
+	    </div>
+	</div>
+	<br>
+	<div id="memoria">
+	    <p> <label> Memoria </label> </p> <br>
+	    <textarea id="tmemoria" name="tmemoria" class="textoareas" contenteditable=false></textarea>
+	</div>
+        <br>
+	<div class="botonesescondidos">
+	<p><button onclick="mostrar('Si','explicacion')">Explicacion</button> </p><br><br><br>
+	<p><button onclick="mostrar('Si','memoria')">Memoria</button></p>
+	</div>
+        <p><strong></strong></p>
+        <p><strong></strong></p>
+	
+	</div>
+	</div>
+	
+    </body>
+</html>

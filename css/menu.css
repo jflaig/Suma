@@ -1,0 +1,82 @@
+nav{
+ width:1000px;
+ height:60px;
+ background-color:#D0D0D0;
+ margin:0 auto;
+}
+
+#menu{
+ list-style:none;
+ list-style-position:inside;
+ width:800px;
+ margin:0 auto;
+ display:block;
+ text-align:center;
+}
+
+#menu li{
+ color:white;
+ float:left;
+ padding:20px;
+ width:150px;
+ position:relative;
+ text-decoration:none;
+ font-family:sans-serif;
+ font-weight:bold;
+ outline:none;
+ cursor:pointer;
+}
+
+
+#menu li ul{
+ list-style:none;
+ list-style-position:inside;
+ display:none;
+ position:absolute;
+ top:60px;
+ left:-41px;
+ z-index:1;
+}
+
+/* Es la ultima opción del submenu. con border-radius se da los bordes redondeados al final */
+#menu .ultimo{
+ border-radius:0 0 10px 10px;
+ border:1px white solid;
+ border-top:none;
+}
+
+/* Son las opciones del submenu. */
+#menu li ul li{
+ background-color:#D0D0D0;
+ padding:10px;
+ width:170px;
+ border-bottom:1px white dashed;
+ border-left:1px white solid;
+ border-right:1px white solid;
+}
+
+/* Configuración al pasar el mouse ensima de una opción principal */
+#menu li:hover{
+ background-color:#D0D0D0;
+ border-left:1px white solid;
+ border-right:1px white solid;
+ text-decoration:underline;
+}
+
+/* Hace visible el ul del submenu al pasar el mouse ensima de una opción principal */
+#menu li:hover > ul{
+ display:block;
+}
+
+/* Configuración de como se veran los enlaces */
+#menu a, #menu a:visited{
+ color:white;
+ text-decoration:none;
+ font-family:sans-serif;
+ font-weight:bold;
+ outline:none;
+}
+
+#menu a:hover{
+ text-decoration:underline;
+ }
