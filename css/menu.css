@@ -80,3 +80,31 @@ nav{
 #menu a:hover{
  text-decoration:underline;
  }
+ 
+ @media screen {
+    body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        background-color:#FFFFFF;
+        background-repeat: repeat-y;
+        background-position: center top;
+    }
+}
+
+/* SmartPhone Version */
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 640px) {
+    body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        background-color:#FFFFFF;
+        background-repeat: repeat-y;
+        background-position: center top;
+    }
+}
